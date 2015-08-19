@@ -1,0 +1,62 @@
+//
+// Custom Less Code
+// --------------------------------------------------
+.roundCorners{border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.borderBottom{border-bottom: 1px solid #f1f1f1;
+}
+header{width: 100%;
+    float: left;
+    .borderBottom;
+nav ul{float: left;
+    margin: 0;
+}
+nav ul li{list-style: none;
+    float: left;
+}
+nav ul li a{color: #666;
+    padding: 20px;
+    font-size: 13px;
+    float: left;
+    .border-radius;
+}
+}
+
+.border-radius (@radius: 0px) {
+    border-radius: @radius;
+	/*-webkit-border-top-right-radius:    @topRight;
+	-webkit-border-bottom-right-radius: @bottomRight;
+	-webkit-border-bottom-left-radius:  @bottomLeft;
+	-webkit-border-top-left-radius:     @topLeft;
+
+	-moz-border-radius-topright:        @topRight;
+	-moz-border-radius-bottomright:     @bottomRight;
+	-moz-border-radius-bottomleft:      @bottomLeft;
+	-moz-border-radius-topleft:         @topLeft;
+
+	border-top-right-radius:            @topRight;
+	border-bottom-right-radius:         @bottomRight;
+	border-bottom-left-radius:          @bottomLeft;
+	border-top-left-radius:             @topLeft;
+*/}
+
+/*media queries using less*/
+@desktop:   ~"only screen and (max-width: 1199px)";
+@tablet:    ~"only screen and (max-width: 1024px)";
+@mobile:    ~"only screen and (max-width: 767px)";
+
+@media @desktop {
+header{background: #000;
+}    
+}
+
+@media @tablet {
+header{background: #666;
+}    
+}
+
+@media  @mobile{
+header{background: #ccc;
+}
+}
